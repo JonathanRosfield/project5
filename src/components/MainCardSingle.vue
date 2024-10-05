@@ -7,14 +7,14 @@ const fullname = faker.person.fullName({ firstName: firstname, lastName: lastnam
 const job_title = faker.person.jobTitle();
 const bio = faker.lorem.lines(2);
 const username = faker.internet.userName({ firstName: firstname, lastName: lastname }).toLowerCase();
-
+const phone = faker.phone.imei() 
 
 </script>
 
 
 <template>
 
-<RouterLink :to="{name: 'CardDetails', params: {id: username}}">
+<RouterLink :to="{ name: 'CardDetails', params: { id: username, fullname: fullname, job_title: job_title, bio: bio, phone: phone } }">
 <div class="border border-gray-400 rounded-xl shadow bg-gray-200 h-full">
     <img :src="faker.image.urlLoremFlickr({width: 640, height: 480, category: 'cat'})" class="rounded-t-xl" />
     <div class="p-4">
