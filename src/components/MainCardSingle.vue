@@ -14,11 +14,11 @@ const bio = "Click here to see more information about this contact";
 <template>
   <RouterLink :to="{ name: 'CardDetails', params: { id: username, fullname, job_title, bio, phone } }">
     <div class="border border-gray-400 rounded-xl shadow-lg bg-white hover:scale-105 h-full">
-      <img :src="avatar" class="rounded-t-xl w-full h-48 object-cover" />
+      <img :src="avatar" class="rounded-t-xl w-full h-64 object-cover" />
       <div class="p-6">
         <p class="mb-2 text-2xl font-bold text-blue-600">{{ fullname }}</p>
-        <p class="mb-3 font-semibold text-gray-700">{{ job_title }}</p>
-        <p class="mb-3 font-normal text-gray-500">{{ bio }}</p>
+        <p class="mb-2 font-semibold text-gray-700">{{ job_title }}</p>
+        <p class="mb-2 font-normal text-gray-500">{{ bio }}</p>
       </div>
     </div>
   </RouterLink>
