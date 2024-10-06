@@ -25,11 +25,8 @@
     </div>
 
     <!-- Login Button -->
-    <button 
-      @click="logUserIn" 
-      class="w-full bg-green-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-600 transition duration-300"
-    >
-      LOGIN
+    <button @click="logUserIn" class="w-full bg-green-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-600 transition duration-300"
+    >LOGIN
     </button>
   </form>
 </template>
