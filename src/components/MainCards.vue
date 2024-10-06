@@ -12,7 +12,7 @@ import MainCardSingle from './MainCardSingle.vue';
     <h1 class="text-4xl font-bold">Contact List</h1>
 </div>
 
-<div class="grid grid-cols-3 gap-5 p-6 bg-gray-100 min-h-screen">
+<div class="grid grid-cols-3 gap-5 p-6 bg-gray-300 min-h-screen">
     <MainCardSingle v-for = "card in 12" :key="card"> </MainCardSingle>
 </div>
 
